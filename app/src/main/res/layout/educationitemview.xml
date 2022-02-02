@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/edudisplay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardview_shadow_start_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/cardview_shadow_end_color"
+    android:layout_marginBottom="25sp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/jobheader"
+            android:layout_width="362dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:text="High School/University"
+            android:textColor="#090707"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="94dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="from"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/instit_tv"
+            android:layout_width="363dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:ems="10"
+            android:hint="Institution Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp"
+            android:textColor="#231414"
+            android:textColorHint="#707070" />
+
+        <TextView
+            android:id="@+id/educate_name"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Education Type"
+            android:textColor="#231414"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/qualification_tv"
+            android:layout_width="368dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="20dp"
+
+            android:hint="PRE-Med,BSCS,MCS"
+            android:gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:paddingLeft="8dp"
+            android:textColor="#231414"
+            android:textColorHint="#707070" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Duration"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/studview"
+            android:layout_width="401dp"
+            android:layout_height="43dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/yearfromedu_tv"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:textColor="#231414"
+                android:textColorHint="#707070" />
+
+            <TextView
+                android:id="@+id/yeartilledu_tv"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="8dp"
+                android:textColor="#231414"
+                android:gravity="center_vertical"
+                android:textColorHint="#707070" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/eid_tv"
+            android:layout_height="2dp"
+            android:width="2dp"
+            android:visibility="gone"
+            android:layout_width="2dp" />
+
+        <TextView
+            android:id="@+id/pidfk_edu_tv"
+            android:layout_height="2dp"
+            android:width="2dp"
+            android:visibility="gone"
+            android:layout_width="2dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

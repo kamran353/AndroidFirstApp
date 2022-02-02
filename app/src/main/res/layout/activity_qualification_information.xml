@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".QualificationInformationActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Enter Your Qualification Information"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_marginLeft="0dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Institution:"
+                android:id="@+id/Insitute"
+               android:textColor="@color/black"
+                android:textSize="20dp"
+
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/institueName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:hint="Institution Name"
+                android:background="@drawable/edit_text_border"
+                android:inputType=""
+
+
+                android:padding="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Duration:"
+                android:id="@+id/Duration"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/fromYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:enabled="false"
+                    android:hint="FROM YEAR"
+                    android:layout_marginTop="30dp"
+                    android:inputType=""
+                    android:padding="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_text_border"/>
+                 <Button
+                     android:layout_width="match_parent"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:text="Choose"
+                     android:id="@+id/btnFromDate"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="7"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/toYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:hint="TILL YEAR"
+                    android:layout_marginTop="30dp"
+                    android:inputType=""
+                    android:enabled="false"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:background="@drawable/edit_text_border"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Choose"
+                    android:id="@+id/btnToDate"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Education Type:"
+                android:id="@+id/Type"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+               android:hint="PRE-Med,BSCS,MCS"
+                android:layout_marginTop="30dp"
+                android:inputType=""
+                android:padding="5dp"
+                android:background="@drawable/edit_text_border"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Total Marks:"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/totalMarks"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:hint="Total Marks"
+                android:layout_marginTop="30dp"
+                android:inputType="number"
+                android:padding="5dp"
+                android:background="@drawable/edit_text_border"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Obtained Marks:"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/obtMarks"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:hint="Obtained Marks"
+                android:layout_marginTop="30dp"
+                android:inputType="number"
+                android:padding="5dp"
+                android:background="@drawable/edit_text_border"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Description:"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:hint="Description"
+                android:layout_marginTop="30dp"
+                android:padding="5dp"
+                android:gravity="start"
+                android:background="@drawable/edit_text_border"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+            <Button
+                android:layout_weight="2"
+                android:id="@+id/btnMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:textSize="16dp"
+                android:text="Save Changes"
+                android:textColor="#ffffff"
+                android:background="@color/black"
+                />
+            <ImageView
+                android:layout_weight="8"
+                android:id="@+id/addButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.185"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.04"
+                app:srcCompat="@drawable/ic_action_add"
+                tools:ignore="VectorDrawableCompat"
+                 />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:id="@+id/recyclerViewEducation"
+                android:textSize="13dp"
+                android:text="Email Address: MuhammadAli33@gmail.com"/>
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

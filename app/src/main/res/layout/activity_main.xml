@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="WELCOME!!"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Make Your CV
+with the utmost Ease!!
+Get started Now.."
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="40dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/proceed"
+                android:text="Agree"
+                android:textSize="20dp"
+                android:layout_marginTop="500dp"
+                  android:gravity="center"
+                android:layout_marginLeft="180dp"
+
+                android:onClick="proceed"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+
+</RelativeLayout>

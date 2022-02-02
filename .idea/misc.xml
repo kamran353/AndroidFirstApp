@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/My Android Projects/app/src/main/res/drawable/btndesignfor_doctor.xml" value="0.14635416666666667" />
+        <entry key="..\:/My Android Projects/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.2703125" />
+        <entry key="..\:/My Android Projects/app/src/main/res/layout/activity_first_template.xml" value="0.25271739130434784" />
+        <entry key="..\:/My Android Projects/app/src/main/res/layout/activity_hobbies.xml" value="0.1793478260869565" />
+        <entry key="..\:/My Android Projects/app/src/main/res/layout/activity_job_experince.xml" value="0.25416666666666665" />
+        <entry key="..\:/My Android Projects/app/src/main/res/layout/activity_personal_information.xml" value="0.17300724637681159" />
+        <entry key="..\:/My Android Projects/app/src/main/res/layout/activity_preview_cv.xml" value="0.25416666666666665" />
+        <entry key="..\:/My Android Projects/app/src/main/res/layout/activity_projects.xml" value="0.25416666666666665" />
+        <entry key="..\:/My Android Projects/app/src/main/res/layout/activity_qualification_information.xml" value="0.25416666666666665" />
+        <entry key="..\:/My Android Projects/app/src/main/res/layout/activity_second_template.xml" value="0.25271739130434784" />
+        <entry key="..\:/My Android Projects/app/src/main/res/layout/cv_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/My Android Projects/app/src/main/res/layout/education_item.xml" value="0.24003623188405798" />
+        <entry key="..\:/My Android Projects/app/src/main/res/layout/job_item.xml" value="0.24003623188405798" />
+        <entry key="..\:/My Android Projects/app/src/main/res/menu/list_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".SkillActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HOBBIES"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="0dp"/>
+
+
+            <EditText
+                android:id="@+id/txtHobby"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:hint="Hobbies"
+                android:background="@drawable/edit_text_border"
+                android:inputType=""
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/btnMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:textSize="16dp"
+                android:text="Save Changes"
+                android:textColor="#ffffff"
+                android:background="@color/black"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/addButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.185"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.04"
+                app:srcCompat="@drawable/ic_action_add"
+                tools:ignore="VectorDrawableCompat"
+                />
+               <ListView
+                   android:layout_width="match_parent"
+                   android:layout_height="450dp"
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/hobbiesList"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

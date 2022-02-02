@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".ProjectsActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Projects Developed"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_marginLeft="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Project Name"
+                android:id="@+id/ProjectName"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/projectName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text_border"
+                android:inputType=""
+                android:hint="Project Name"
+                android:padding="5dp" />
+            <EditText
+                android:id="@+id/companyName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text_border"
+                android:inputType=""
+                android:hint="Company or Insitute Name"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Duration"
+                android:id="@+id/Description"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/fromYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:enabled="false"
+                    android:hint="FROM YEAR"
+                    android:layout_marginTop="30dp"
+                    android:inputType=""
+                    android:padding="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_text_border"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Choose"
+                    android:id="@+id/btnFromDate"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/toYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:hint="TILL YEAR"
+                    android:layout_marginTop="30dp"
+                    android:inputType=""
+                    android:enabled="false"
+                    android:layout_weight="3"
+                    android:padding="5dp"
+                    android:background="@drawable/edit_text_border"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Choose"
+                    android:id="@+id/btnToDate"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"/>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/additionalInformation"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:hint="Enter Additional Project Information "
+                android:layout_marginTop="30dp"
+                android:inputType=""
+                android:padding="10dp"
+                android:gravity="start"
+                android:background="@drawable/edit_text_border"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnMore"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Save Changes"
+                android:textColor="#ffffff"
+                android:layout_marginRight="5dp"
+                android:background="@color/black"
+                />
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:background="@color/black"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:id="@+id/recyclerViewProject"
+                android:textSize="13dp"
+                android:text="Email Address: MuhammadAli33@gmail.com"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
