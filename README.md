@@ -9,3 +9,6 @@ Now add your remote origin by performing
 -> git remote -v
 -> git push origin master
 Your application code got pushed to the repository.
+
+
+https://www.geeksforgeeks.org/how-to-create-your-own-android-library-and-publish-it-in-github/
